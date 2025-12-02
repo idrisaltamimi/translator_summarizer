@@ -1,0 +1,73 @@
+# ---- OS / Editor junk ----
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# ---- Python backend ----
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.pyre/
+pytestdebug.log
+
+# SQLite / local DBs (if you create any)
+*.sqlite3
+*.db
+
+# Environment variables / secrets
+.env
+.env.local
+.env.*
+!.env.example
+
+# ---- Hugging Face / model cache (if inside project) ----
+cache/
+.cached_models/
+*.bin
+*.safetensors
+
+# ---- Node / React frontend ----
+frontend/node_modules/
+frontend/dist/
+frontend/.turbo/
+frontend/.next/
+frontend/.parcel-cache/
+frontend/.cache/
+frontend/coverage/
+
+# Frontend logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Lockfiles are usually committed, so they are NOT ignored:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
