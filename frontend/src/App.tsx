@@ -63,7 +63,8 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-950 via-slate-900 to-black text-slate-50">
+    <div className="relative min-h-screen w-full overflow-hidden text-slate-50">
+      <div className="fixed inset-0 -z-10 bg-linear-to-br from-slate-950 via-slate-900 to-black pointer-events-none" />
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-10 sm:px-8">
         <header className="flex flex-col gap-4 rounded-3xl bg-white/5 p-6 shadow-xl shadow-blue-900/30 ring-1 ring-white/10 backdrop-blur">
           <div className="flex flex-wrap items-center justify-between gap-4">
@@ -286,7 +287,7 @@ const LangSelect: React.FC<LangSelectProps> = ({ label, value, onChange }) => {
     <label className="flex flex-col gap-1 text-xs text-slate-300">
       <span className="font-medium text-white">{label}</span>
       <select
-        className="h-10 min-w-36 rounded-xl border border-white/10 bg-slate-900/80 px-3 text-sm text-white outline-none ring-blue-500/0 transition hover:border-white/40 focus:border-blue-400/70 focus:ring-2 focus:ring-blue-500/30"
+        className="h-10 min-w-[9rem] rounded-xl border border-white/10 bg-slate-900/80 px-3 text-sm text-white outline-none ring-blue-500/0 transition hover:border-white/40 focus:border-blue-400/70 focus:ring-2 focus:ring-blue-500/30"
         value={value}
         onChange={(e) => onChange(e.target.value as Language)}
       >
